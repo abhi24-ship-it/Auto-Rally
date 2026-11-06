@@ -87,7 +87,7 @@ Extra checks:
 - Reset the saved best time (for testing): in the browser console run
   `localStorage.removeItem('autoRallyBestMs')`.
 
-## How the game works (for presenting)
+## How the game works 
 
 - **Game loop** – `loop()` runs about 60 times a second: `update()` moves everything,
   `draw()` paints the frame, `updateHud()` refreshes the top bar.
