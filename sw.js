@@ -1,7 +1,7 @@
 // Service worker: saves the game files on the phone the first time it is
 // opened online. After that the game loads from this cache, even in flight mode.
 
-const CACHE = 'auto-rally-v3';   // change the number when you update the game
+const CACHE = 'auto-rally-v5';   // change the number when you update the game
 const FILES = [
   './',
   './index.html',
