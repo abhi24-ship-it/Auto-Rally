@@ -392,8 +392,10 @@ function showBest() {
 }
 
 function formatTime(sec) {
-  const m = Math.floor(sec / 60);
-  const s = sec - m * 60;
+  // Round to tenths first, so 9.96 becomes 10.0 and 59.96 becomes 1:00.0.
+  const tenths = Math.round(sec * 10);
+  const m = Math.floor(tenths / 600);
+  const s = (tenths % 600) / 10;
   return m + ':' + (s < 10 ? '0' : '') + s.toFixed(1);
 }
 
